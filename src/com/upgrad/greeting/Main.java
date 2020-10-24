@@ -12,5 +12,9 @@ public class Main {
         GreetingService greetingService = (GreetingService)context.getBean("englishGreetingService");
 
         greetingService.greet("Jyothsna");
+        
+        //time service
+        TimeService timeService = (TimeService) context.getBean("timeService24HourFormat");
+        System.out.println("Current Time In 24Hr Format : "+timeService.getCurrentTime());
     }
 }
