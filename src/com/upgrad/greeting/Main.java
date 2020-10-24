@@ -11,6 +11,6 @@ public class Main {
                 new AnnotationConfigApplicationContext("com.upgrad.greeting");
         GreetingService greetingService = (GreetingService)context.getBean("englishGreetingService");
 
-        greetingService.greet("John");
+        greetingService.greet("Jyothsna");
     }
 }
